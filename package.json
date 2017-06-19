@@ -1,0 +1,19 @@
+{
+  "name": "phase-2-challenge",
+  "version": "1.0.0",
+  "description": "This is the challenge for getting into phase 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teqnickels/phase-2-challenge.git"
+  },
+  "author": "Debrena McEwen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teqnickels/phase-2-challenge/issues"
+  },
+  "homepage": "https://github.com/teqnickels/phase-2-challenge#readme"
+}
