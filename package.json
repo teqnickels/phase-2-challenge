@@ -1,0 +1,27 @@
+{
+  "name": "phase-2-challenge",
+  "version": "1.0.0",
+  "description": "This is the challenge for getting into phase 2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register ./part-1/tests.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teqnickels/phase-2-challenge.git"
+  },
+  "author": "Debrena McEwen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teqnickels/phase-2-challenge/issues"
+  },
+  "homepage": "https://github.com/teqnickels/phase-2-challenge#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-register": "^6.18.0",
+    "chai": "^4.0.2",
+    "chai-change": "^2.1.2",
+    "mocha": "^3.4.2"
+  }
+}
