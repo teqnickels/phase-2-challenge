@@ -1,5 +1,5 @@
-var chai = require('chai');
-var chaiHttp = require('chai-http');
-var should = chai.should();
+import chai, { expect } from 'chai'
+import chaiChange from 'chai-change'
 
-chai.use(chaiHttp);
+
+chai.use(chaiChange)
