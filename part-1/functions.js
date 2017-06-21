@@ -24,7 +24,25 @@ export default class Funcs {
     }
   }
 
-  
+  numProps(obj) {
+    var listObj = Object.getOwnPropertyNames(obj)
+    objLength = listObj.length
+    console.log(objLength);
+  }
+
+  filterBetween( arr, min, max ) {
+    if(min < 1) {
+      var newArr = [];
+      for( var i = 0; i < arr.length; i++) {
+        if(arr[i] <= max) {
+          newArr.push(arr[i])
+        }
+      }
+      return newArr
+     }else{
+      return arr.slice(min-1, max)
+    }
+  }
 
 
 }
