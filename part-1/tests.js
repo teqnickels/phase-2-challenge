@@ -12,7 +12,7 @@ describe('functions', () => {
   context('dayOfWeek()', () => {
   it('takes a date and returns the day of week',() => {
     const date = new Weekday( 99, 5, 14 )
-    expect(date.dayOfWeek(99, 5, 14)).to.equal( 1 )
+    expect(date.dayOfWeek(99, 5, 14)).to.equal( 'Tuesday' )
       })
     })
 

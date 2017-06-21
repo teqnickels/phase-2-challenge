@@ -8,6 +8,7 @@ export default class Weekday {
   dayOfWeek(year, month, day) {
     var date = new Date(year, month, day)
     var day = date.getDay()
-    return day
+    var dayName= ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    return dayName[day]
   }
 }
