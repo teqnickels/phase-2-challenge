@@ -1,11 +1,24 @@
 var funcs = {
   dayOfWeek: function( year, month, day ) {
-    var date = new Date( year, month, day )
-    var day = date.getDay()
-    var dayName= [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ]
-    return dayName[ day ]
+    if(typeof(year) !== 'number') {
+      return 'Error, invalid input'
+    }
+    if(typeof(month) !== 'number') {
+      return 'Error, invalid input'
+    }
+    if(typeof(day) !== 'number') {
+      return 'Error, invalid input'
+    }else{
+      var date = new Date( year, month, day )
+      var day = date.getDay()
+      var dayName= [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ]
+      return dayName[ day ]
+    }
   },
   snippet: function( str, maxLength ) {
+    if(typeof(maxLength) !== 'number') {
+      return 'Error'
+    }
     if( str.length > maxLength ) {
       var altStr = str.substring( 0, maxLength )
       var finalStr = altStr + '...'
@@ -19,6 +32,12 @@ var funcs = {
     return listObj.length;
   },
   filterBetween: function( arr, min, max ) {
+    if(typeof(min) !== 'number') {
+      return 'Error, invalid input'
+    }
+    if(typeof(max) !== 'number') {
+      return 'Error, invalid input'
+    }
     if(min < 1) {
       var newArr = [];
       for( var i = 0; i < arr.length; i++) {
