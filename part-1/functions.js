@@ -9,7 +9,7 @@ var funcs = {
     if(typeof(day) !== 'number') {
       return 'Error, invalid input'
     }else{
-      var date = new Date( year, month, day )
+      var date = new Date( year, month+1, day )
       var day = date.getDay()
       var dayName= [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday' ]
       return dayName[ day ]
